@@ -1,4 +1,4 @@
-{% set version = '1.1-5' %}
+{% set version = "1.1-6" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,12 +10,12 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/mixsmsn_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/mixsmsn/mixsmsn_{{ version }}.tar.gz
-  sha256: fc783d81a2c7734ca85550248b7cce6a9b8b228e539d700e9a58e35e0ed43e78
+  sha256: 4925281dec3970c24eabf49c98ff7148fef0562e06ac5cfd6fdd8c613dd08b7e
 
 build:
   noarch: generic
   merge_build_host: True  # [win]
-  number: 1001
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
