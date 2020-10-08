@@ -1,4 +1,4 @@
-{% set version = "1.1-7" %}
+{% set version = "1.1-8" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/mixsmsn_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/mixsmsn/mixsmsn_{{ version }}.tar.gz
-  sha256: f91f75199070c634e8e570d4e6d2c3b8e9597fdd2aebe74157a0dc1d675f88f7
+  sha256: d0b9c905e138a39587e837975addfe771686e59807349ed0d8dbe1554ad65480
 
 build:
   merge_build_host: true  # [win]
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -37,9 +37,8 @@ test:
 
 about:
   home: https://CRAN.R-project.org/package=mixsmsn
-  license: GPL (>= 2.0)
-  summary: 'Functions to fit finite mixture of scale mixture of skew-normal (FM-SMSN) distributions, details in Prates, Lachos and Cabral (2013) <doi: 10.18637/jss.v054.i12>,
-    Cabral, Lachos and Prates (2012) <doi:10.1016/j.csda.2011.06.026> and Basso, Lachos, Cabral and Ghosh (2010) <doi:10.1016/j.csda.2009.09.031>.'
+  license: GPL-2.0-or-later
+  summary: 'Functions to fit finite mixture of scale mixture of skew-normal (FM-SMSN) distributions, details in Prates, Lachos and Cabral (2013) <doi: 10.18637/jss.v054.i12>, Cabral, Lachos and Prates (2012) <doi:10.1016/j.csda.2011.06.026> and Basso, Lachos, Cabral and Ghosh (2010) <doi:10.1016/j.csda.2009.09.031>.'
   license_family: GPL3
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
