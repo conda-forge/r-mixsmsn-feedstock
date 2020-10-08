@@ -5,11 +5,9 @@ Home: https://CRAN.R-project.org/package=mixsmsn
 
 Package license: GPL (>= 2.0)
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-mixsmsn-feedstock/blob/master/LICENSE.txt)
 
 Summary: Functions to fit finite mixture of scale mixture of skew-normal (FM-SMSN) distributions, details in Prates, Lachos and Cabral (2013) <doi: 10.18637/jss.v054.i12>, Cabral, Lachos and Prates (2012) <doi:10.1016/j.csda.2011.06.026> and Basso, Lachos, Cabral and Ghosh (2010) <doi:10.1016/j.csda.2009.09.031>.
-
-
 
 Current build status
 ====================
