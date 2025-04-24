@@ -1,4 +1,4 @@
-{% set version = "1.1-10" %}
+{% set version = "1.1-11" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/mixsmsn_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/mixsmsn/mixsmsn_{{ version }}.tar.gz
-  sha256: 7dec9a14f17786c32ab6fd290e9051f66da8c15f84af4310ffc2285a4c5e61f0
+  sha256: f37864c0ef2b4c409ef26051f0196af84d95936a64935cc8054c917d8f5423c4
 
 build:
-  number: 3
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
